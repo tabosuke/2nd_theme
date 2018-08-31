@@ -1,5 +1,5 @@
-<aside id="sidebar">
-  <div class="sidebar-inner">
+<aside class="sidebar">
+  <div class="sidebarInner">
 
   </div>
 </aside>

@@ -109,7 +109,7 @@ body {
   font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   font-size: 16px;
   line-height: 1.7;
-  color: #393e46;
+  color: 1e2022;
   box-sizing: border-box;
 }
 
@@ -118,17 +118,53 @@ img {
   height: auto;
 }
 
-.headerInner, .container, .footerInner {
+.headerInner, .containerInner, .footerInner {
   width: 1000px;
   margin: 0 auto;
 }
 
 .header {
-  height: 70px;
+  background-color: #c9d6df;
+}
+
+.headerInner {
+  overflow: hidden;
+}
+
+.siteTitle {
+  display: inline-block;
+  padding-top: 8px;
+}
+
+.siteTitle h1, .siteTitle img {
+  height: 60px;
+}
+
+.headerNav {
+  display: inline-block;
+  float: right;
+}
+
+.headerNav ul {
+  display: flex;
+}
+
+.headerNav ul li {
+  display: table;
+}
+
+.headerNav ul li a {
+  display: table-cell;
+  padding: 25px;
+  vertical-align: middle;
+}
+
+.headerNav ul li:last-child a {
+  padding-right: 0;
 }
 
 .container {
-  background-color: #eee;
+  background-color: #f0f5f9;
   padding: 35px 0;
   overflow: hidden;
 }
