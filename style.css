@@ -102,15 +102,50 @@ input, select {
 }
 
 /* main_code */
+/* ======================= */
+/*          common         */
+/* ======================= */
 body {
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   font-size: 16px;
   line-height: 1.7;
   color: #393e46;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.headerInner, .container, .footerInner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 70px;
+}
+
+.container {
+  background-color: #eee;
+  padding: 35px 0;
+  overflow: hidden;
+}
+
+.contents {
+  float: left;
+  width: 70%;
+  margin-right: 3.5%;
+}
+@media screen and (max-width: 479px) {
+  .contents {
+    float: none;
+    width: 100vw;
+  }
+}
+
+.sidebar {
+  float: left;
+  width: 26.5%;
 }
